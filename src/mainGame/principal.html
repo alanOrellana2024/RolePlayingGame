@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Game-Here the adventure begins</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+
+    <div class="relative min-h-screen">
+        <!-- Contenido de la página -->
+        <button id="toggleMenu" class="fixed bottom-4 right-4 p-3 bg-blue-500 text-white rounded-full cursor-pointer">
+            ▶️
+        </button>
+        <ul id="menu" class="hidden fixed right-4 bottom-16 p-2 bg-white text-gray-800 rounded-md shadow-md">
+          <li><a href="#">Regresar</a></li>
+          <li><a href="#">Opción 2</a></li>
+          <li><a href="#">Opción 3</a></li>
+      </ul>
+    </div>
+    <script>
+      const toggleButton = document.getElementById("toggleMenu");
+      const menu = document.getElementById("menu");
+    
+      toggleButton.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+      });
+    </script>
+</body>
+</html>
